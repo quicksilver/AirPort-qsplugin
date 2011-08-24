@@ -189,6 +189,9 @@
 /* Begin PBXProject section */
 		0259C573FE90428111CA0C5A /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = 7F07AF12085E432900E2AFC4 /* Build configuration list for PBXProject "QSAirPortPlugIn" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -258,7 +261,7 @@
 			baseConfigurationReference = 14A8AA6A10CE07BC003857E3 /* Debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				SDKROOT = macosx10.6;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -266,12 +269,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8AA6D10CE07BC003857E3 /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(QSFrameworks)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -288,12 +291,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A8AA6F10CE07BC003857E3 /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(QSFrameworks)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
 				);
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QSAirPortPlugIn_Prefix.pch;
@@ -310,7 +313,7 @@
 			baseConfigurationReference = 14A8AA7010CE07BC003857E3 /* Release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				SDKROOT = macosx10.6;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
